@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Project3</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+
+      <div class="container">
+        <div class="bar">
+          <table class="bar_table">
+            <tr>
+            <td class="bar_table_domain" id="first"><img src="/assets/rails.png"></td>
+            <td class="bar_table_domain" id="project_name">Project3</td>
+            <td class="bar_table_domain">Home</td>
+            <td class="bar_table_domain">About</td>
+            <td class="bar_table_domain">Features</td>  
+            <td class="bar_table_domain">Contact</td> 
+            <td class="bar_table_domain" id="last" ><img src="/assets/rails.png"></td>    
+            </tr>
+          </table>
+        </div>  
+        <div class="content">
+          <%= yield %>            
+        </div>
+      </div>
+      <p>@ 2013 Powered by: Rails.</p>
+
+
+
+
+
+</body>
+</html>
